@@ -1,0 +1,113 @@
+/* General chat container styles */
+.chat-container {
+    width: 100%;
+    max-width: 480px;
+    margin: 30px auto;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Chat header styles */
+.chat-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Message area styles */
+.message-area {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+/* Individual message styles */
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-break: break-word;
+}
+
+/* User message styles */
+.user-message {
+    text-align: right;
+    width: fit-content;
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+/* Bot message styles */
+.bot-message {
+    width: fit-content;
+    text-align: left;
+    background-color: #555;
+    color: white;
+}
+
+/* Input area styles */
+.input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Message input styles */
+.message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    outline: none;
+    margin-right: 10px;
+}
+
+/* Send button styles */
+.send-button {
+    background-color: #28a745;
+    width: fit-content;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.input-area:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.send-button:hover {
+    background-color: #218838;
+}
+
+/* Scrollbar styles for message area */
+.message-area::-webkit-scrollbar {
+    width: 5px;
+}
+
+.message-area::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.message-area::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.message-area::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
